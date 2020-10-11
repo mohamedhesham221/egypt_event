@@ -1,0 +1,30 @@
+.contact{
+    padding-top: 100px;
+    width: 100%;
+    min-height: 650px;
+    background-image: url(../images/bg5.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 10px 50px black inset;
+
+    h2{
+        color: $headColor;
+        font-family: $hFont;
+        margin-bottom: 50px;
+    }
+
+    .form-control{
+        margin-bottom: 50px;
+        background-color: $txtColor;
+    }
+
+    .form-group{
+        margin-bottom: 0;
+        img{
+            width: calc(100% - 50px);
+            height: calc(100% - 200px);
+            
+        }
+    }
+}

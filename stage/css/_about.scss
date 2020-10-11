@@ -1,0 +1,40 @@
+.about{
+    width: 100%;
+    min-height: 650px;
+    padding-top: 70px;
+    padding-bottom: 50px;
+    background-image: url(../images/bg1.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 10px 50px black inset;
+    p{
+        font-family: $pFont;
+        color: $txtColor;
+
+        strong{
+            font-weight: bold;
+            color: $txtSpanColor;
+        }
+    }
+
+    h2{
+        font-family: $hFont;
+        margin-bottom: 50px;
+        color: $headColor;
+        
+    }
+
+
+    .video{
+        width: 100%;
+        height: 100%;
+        padding-top: 70px;
+        position: relative;
+
+        iframe{
+            width: calc(100% - 250px);
+            height: 500px;
+        }
+    }
+}

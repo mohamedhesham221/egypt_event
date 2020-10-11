@@ -1,0 +1,51 @@
+.gallery{
+    padding-top: 70px;
+    width: 100%;
+    min-height: 650px;
+    background-image: url(../images/bg2.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 10px 50px $bgColor inset;
+
+    p{
+        font-family: $pFont;
+        color: $txtColor;
+    }
+    h2{
+        font-family: $hFont;
+        font-weight: bold;
+        color: $headColor;
+    }
+    h5{
+        @extend h2;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+
+    .carousel{
+        padding-bottom: 50px;
+        opacity: .8;
+        .carousel-inner{
+            .carousel-item{
+                img{
+                    width: 100%;
+                    height: 500px;
+                    border-radius: 20px;
+                }
+                .carousel-caption{
+                    background-color: #1327439a;
+                    margin-bottom: 100px;
+                    border-radius: 20px;
+                }
+            }
+        }
+
+        .carousel-indicators li{
+            background-color: $bgColor;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+        }
+    }
+}

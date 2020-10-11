@@ -1,0 +1,74 @@
+.monuments{
+    width: 100%;
+    min-height: 650px;
+    padding-top: 100px;
+    background-image: url(../images/bg4.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 10px 50px $bgColor inset;
+    p{
+        font-family: $pFont;
+        color: $txtColor;
+    }
+    h2{
+        font-family: $hFont;
+        color: $headColor;
+    }
+
+    .artifact{
+        margin-bottom: 60px;
+    }
+
+    .artifact{
+        &:first-of-type{
+            margin-top: 40px;
+        }
+    }
+
+    h4{
+        @extend h2;
+        color: $bgColor;
+        font-weight: bold;
+    }
+    .img{
+        width: 100%;
+        padding: 0 15%;
+
+        img{
+            width: 100%;
+            box-shadow: 0 3px 4px black;
+        border-radius: 50%;       
+    }
+
+    .shape1{
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+        margin-top: 100px;
+
+    }
+    .shape2{
+        border-top-right-radius: 50px;
+        border-bottom-left-radius: 50px;
+        margin-top: 100px;
+    }
+    .shape3{
+    border-radius: 50px;
+    margin-top: 100px;
+    }
+
+    }
+
+    .btn{
+        width: 200px;
+        height: 50px;
+        background-color: $txtSpanColor;
+        color: $txtColor;
+        font-family: $pFont;
+        margin-bottom: 50px;
+        &:hover{
+            background-color: transparent;
+            border: 1px solid currentColor;
+        }
+    }
+}

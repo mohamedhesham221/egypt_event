@@ -1,0 +1,113 @@
+// small screen
+@media (max-width: 768px){
+    nav{
+        width: 50%!important;
+        .nav-link{
+            font-size: .9rem!important;
+        }
+
+        img{
+            margin-left: 0!important;
+        }
+    }
+
+    .pyramids{
+        overflow: hidden;
+        .img-fluid{
+            max-width: unset;
+            right: 0!important;
+                        }
+        } 
+
+        .video{
+            iframe{
+                width: calc(100% - 100px)!important;
+                height: 300px!important;
+            }
+        }
+
+
+        .gallery {
+            h2{
+                font-size: 1.6rem;
+            }
+        }
+        .carousel-item{
+            height: 300px!important;
+            img{
+                height: 100%!important;
+            }
+        }
+
+        .card{
+            width: 100%!important;
+            img{
+                display: none;
+            }
+            .card-body{
+                p{
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .carousel-control-prev,.carousel-control-next{
+            display: none;
+        }
+
+        .organizers {
+            h2{
+                font-size: 1.8rem;
+            }
+        }
+
+        .sponsors{
+            h2{
+                font-size: 1.8rem;
+            }
+
+            
+        }
+
+        .scroll-top{
+            bottom: 0;
+        }
+}
+
+// medium screen
+@media (min-width: 769px) and (max-width: 991px){
+    nav{
+        width: 40%!important;
+        .nav-link{
+            font-size: 1.4rem!important;
+        }
+
+        img{
+            margin-left: 0!important;
+        }
+    }
+
+    .card{
+        width: 100%!important;
+        padding-top: 100px;
+        background-color: #ffffffbb;
+        img{
+            display: none;
+        }
+    }
+
+    footer{
+        p{
+            font-size: 1rem!important;
+        }
+    }
+}
+
+// large screen
+@media (min-width: 992px) and (max-width: 1200px){
+    nav{
+        img{
+            margin-left: 10px!important;
+        }
+    }
+}

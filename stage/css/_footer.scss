@@ -1,0 +1,31 @@
+footer{
+    padding-top: 20px;
+    background-color: $txtSpanColor;
+    p{
+        color: $txtColor;
+        font-family: $pFont;
+        cursor: pointer;
+        &:hover:not(.social){
+            color: $bgColor;
+        }
+
+        $list :     (facebook-square, $bgColor, #3b5999, 2rem),
+                    (twitter-square, $bgColor, #55acee, 2rem),
+                    (instagram-square, $bgColor, #e4405f, 2rem), 
+                    (telegram, $bgColor,  #34465d, 2rem),
+                    (linkedin, $bgColor,  #0077B5, 2rem);
+        @each $social , $color , $hover , $wh in $list {
+            .fa-#{$social}{
+                color: $color;
+                font-size: $wh;
+                &:hover{
+                    color: $hover;
+                }
+            }
+        }
+        span{
+            color: $bgColor;
+            font-weight: bold;
+        }
+    }
+}

@@ -1,0 +1,57 @@
+.organizers{
+    width: 100%;
+    min-height: 650px;
+    padding-top: 70px;
+    background-image: url(../images/org-bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 0 10px 50px black inset;
+    
+    h2{
+        font-family: $hFont;
+        color: $headColor;
+        margin-bottom: 50px;
+    }
+
+    .organizer{
+        width: 100%;
+        height: 100%;
+        padding-bottom: 50px;
+        .img-name{
+            width: 100%;
+            img{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                border-bottom-right-radius: 20px;
+                box-shadow: 0 10px 20px black;
+            }
+            h6{
+                font-family: $hFont;
+                color: $txtColor;
+                margin-top: 10px;
+            }
+        }
+        .info-organizer{
+            h5{
+                font-family: $hFont;
+                color: $headColor;
+                letter-spacing: .1rem;
+            }
+
+            $list:  (facebook-square, #3b5999, 1.5rem),
+                    (twitter-square, #55acee, 1.5rem),
+                    (instagram-square, #e4405f, 1.5rem);
+
+                    @each $social,$color,$font in $list {
+                        .fa-#{$social}{
+                            color: $color;
+                            font-size: $font;
+                            cursor: pointer;
+                        }
+                    }
+        }
+    }
+
+}

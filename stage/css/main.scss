@@ -1,0 +1,199 @@
+$bgColor: #B78C62;
+$txtColor: #fdfdfdcc;
+$headColor:  #ffffff;
+$txtSpanColor: #132743;
+$hFont: 'Times New Roman', Times, serif;
+$pFont: 'Playfair Display', serif;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home{
+    width: 100%;
+    min-height: 660px;
+    position: relative;
+    .logo-text{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $headColor;
+        font-family: $hFont;
+        padding-top: 10px;
+        padding-left: 10%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        span{
+            color: $bgColor;
+        }
+        strong{
+            padding-left: 30px;
+            font-size: .8rem;
+            color: $txtColor;
+        }
+    }
+    .toggler-button{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $txtColor;
+        font-family: $hFont;
+        padding-top: 10px;
+        cursor: pointer;
+        transition: all .5s ease-in-out;
+        position: fixed;
+        top: 0;
+        right: 50px;
+        z-index: 9999;
+        &:hover{
+            transform: rotate(180deg);
+        }
+    }
+
+    .active{
+        background-color: $bgColor;
+        padding-left: 5px;
+    }
+
+    nav{
+        position: fixed;
+        top: 0;
+        left: -350px;
+        width: 25%;
+        height: 100%;
+        background-color: #33566bda;
+        z-index: 9999;
+        box-shadow: 0 10px 20px black;
+        ul{
+            list-style: none;
+            padding-top: 50px;
+            i{
+                position: absolute;
+                top: 10px;
+                left: 20px;
+                color: $bgColor;
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+            .nav-item{
+                transition: all .2s linear;
+                .nav-link{
+                    color: $txtColor;
+                    font-size: 1.5rem;
+                    font-family: $hFont;
+                }
+
+                img{
+                    width: 200px;
+                    height: 200px;
+                    margin-left: 40px;
+                    opacity: .4;
+                }
+    
+            }
+    
+        }
+    }
+
+
+    .bg{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        img{
+            width: 100%;
+            height: 100%;
+            animation: moving 5s linear infinite alternate both;
+        }
+
+        @keyframes moving {
+            0% {
+                      transform: scale(1) translate(0, 0);
+                      transform-origin: 84% 16%;
+            }
+            100% {
+                      transform: scale(1.25) translate(50px, -35px);
+                      transform-origin: right top;
+            }
+          }
+          
+    }
+    .pyramids img{
+        width: 800px;
+        height: 400px;
+        position: absolute;
+        top: 160px;
+        right: 70px;
+        z-index: 0;
+        transition: all 1s linear;
+    }
+    .desert img{
+        width: 100%;
+        height: 700px;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        z-index: 1;
+        transition: all 1s linear;
+    }
+    .intro{
+        width: 100%;
+        height: 100%;
+        padding-top: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        p{
+            color: $txtColor;
+            font-family: $pFont;
+            &::after{
+                content: "";
+                border-bottom: 1.5px solid $bgColor;
+                width: 10%;
+                display: block;
+                position: absolute;
+                left: 45%;
+            }
+        }
+        h2{
+            color: $headColor;
+            font-family: $hFont;
+            margin-top: 50px;
+            text-shadow: 0 9px 5px #000;
+        }
+    }
+}
+
+.scroll-top{
+position: fixed;
+bottom: 115px;
+right: 0;
+z-index: 9999;
+width: 50px;
+height: 50px;
+background-color: #13274377;
+outline: none;
+border: none;
+border-radius: 2px;
+display: none;
+i{
+    font-size: 3rem;
+    color: $headColor;
+}
+}
+
+@import 'about';
+@import 'monuments';
+@import 'gallery';
+@import 'sponsors';
+@import 'contact';
+@import 'footer';
+@import 'testimonial';
+@import 'organizers';
+@import 'media';

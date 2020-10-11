@@ -1,0 +1,37 @@
+{
+  "name": "egypt-project",
+  "version": "1.0.0",
+  "description": "come to egypt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "egypt",
+    "tourist"
+  ],
+  "author": "mohamed hesham",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^1.0.3",
+    "gulp-debug": "^4.0.0",
+    "gulp-image": "^6.2.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-livereload": "^4.0.2",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-watch": "^5.0.1"
+  },
+  "dependencies": {
+    "static-server": "^2.2.1"
+  },
+  "browserslist": [
+    "last 2 version",
+    "> 2%"
+  ]
+}
