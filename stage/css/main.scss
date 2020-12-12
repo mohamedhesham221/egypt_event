@@ -67,17 +67,17 @@ $pFont: 'Playfair Display', serif;
         background-color: #33566bda;
         z-index: 9999;
         box-shadow: 0 10px 20px black;
+        i{
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            color: $bgColor;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
         ul{
             list-style: none;
             padding-top: 50px;
-            i{
-                position: absolute;
-                top: 10px;
-                left: 20px;
-                color: $bgColor;
-                font-size: 1.5rem;
-                cursor: pointer;
-            }
             .nav-item{
                 transition: all .2s linear;
                 .nav-link{
